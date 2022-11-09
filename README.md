@@ -21,8 +21,7 @@ docker-compose logs
 
 
 ```
-docker-compose exec -it db /bin/
+docker-compose exec -it db /bin/bash
 psql --username postgres --password
 SELECT * FROM pg_catalog.pg_tables;
 ```
-
