@@ -8,8 +8,9 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - '5433:5432'
-    volumes: 
+    volumes:
       - db:/var/lib/postgresql/data
+      - ./films.sql:/home/postgres/films.sql
 volumes:
   db:
     driver: local
